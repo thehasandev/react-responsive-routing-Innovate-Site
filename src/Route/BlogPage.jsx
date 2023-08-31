@@ -8,10 +8,10 @@ import Hero from '../components/layOut/Hero'
 function BlogPage() {
   return (
     <>
-      <Navbar/>
+    
       <Hero/>
       <Distribution/>
-      <Footer/>
+      
     </>
   )
 }

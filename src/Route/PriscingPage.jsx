@@ -7,9 +7,9 @@ import Footer from '../components/layOut/Footer'
 function PriscingPage() {
   return (
     <>
-       <Navbar/>
+   
        <Business/>
-       <Footer/>
+    
     </>
   )
 }

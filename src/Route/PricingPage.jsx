@@ -7,9 +7,9 @@ import Footer from '../components/layOut/Footer'
 function PricingPage() {
   return (
     <>
-      <Navbar/>
+      
       <BulitItems/>
-      <Footer/>
+     
     </>
   )
 }

@@ -11,20 +11,25 @@ import PricingPage from './Route/PricingPage'
 import BlogPage from './Route/BlogPage'
 import Protfolio from './Route/Protfolio'
 
+import Navbar from './components/layOut/Navbar'
+import Footer from './components/layOut/Footer'
+
 
 function App() {
   return (
     <>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='*' element={<Error/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/service' element={<ServicePage/>}/>
-        <Route path='/pricing' element={<PricingPage/>} />
-        <Route path='/blog' element={<BlogPage/>}/>
-        <Route path='/protfolio' element={<Protfolio/>}/>
-      </Routes>
+        <Navbar/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='*' element={<Error/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/service' element={<ServicePage/>}/>
+            <Route path='/pricing' element={<PricingPage/>} />
+            <Route path='/blog' element={<BlogPage/>}/>
+            <Route path='/protfolio' element={<Protfolio/>}/>
+          </Routes>
+        <Footer/>
     </BrowserRouter>
     </>
   )

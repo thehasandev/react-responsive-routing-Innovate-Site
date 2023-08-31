@@ -15,7 +15,7 @@ import Footer from '../components/layOut/Footer'
 function Home() {
   return (
     <div>
-      <Navbar/>
+     
       <Hero/>
       <Stacker/>
       <Service/>
@@ -25,7 +25,7 @@ function Home() {
       <CounterPart/>
       <Team/>
       <Email/>
-      <Footer/>
+     
     </div>
   )
 }
