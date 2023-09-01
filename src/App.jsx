@@ -1,38 +1,40 @@
 import React from 'react'
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  Route,RouterProvider
+} from "react-router-dom";
 
-import Home from './Route/Home'
-import Error from './Route/Error'
-import "./App.css"
-import About from './Route/About'
-import ServicePage from './Route/ServicePage'
-import PricingPage from './Route/PricingPage'
-import BlogPage from './Route/BlogPage'
-import Protfolio from './Route/Protfolio'
+import Home from "./Pages/Home"
+import Error from "./Pages/Error"
+import About from "./Pages/About"
+import ServicePage from "./Pages/ServicePage"
+import BlogPage from "./Pages/BlogPage"
+import Protfolio from "./Pages/Protfolio"
+import RouteLayouts from './components/RouteLayouts';
 
-import Navbar from './components/layOut/Navbar'
-import Footer from './components/layOut/Footer'
+const router = createBrowserRouter(
+  createRoutesFromElements(
+  <Route path='/' element={<RouteLayouts/>}>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/service' element={<ServicePage/>}/>
+      <Route path='/blog' element={<BlogPage/>}/>
+      <Route path='/protfolio' element={<Protfolio/>}/>
+      <Route path='*' element={<Error/>}/>
+  </Route>
+  
+  )
+);
 
 
 function App() {
   return (
-    <>
-    <BrowserRouter>
-        <Navbar/>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='*' element={<Error/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/service' element={<ServicePage/>}/>
-            <Route path='/pricing' element={<PricingPage/>} />
-            <Route path='/blog' element={<BlogPage/>}/>
-            <Route path='/protfolio' element={<Protfolio/>}/>
-          </Routes>
-        <Footer/>
-    </BrowserRouter>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
 export default App
+
+
