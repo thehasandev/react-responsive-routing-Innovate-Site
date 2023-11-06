@@ -42,7 +42,7 @@ function Footer() {
                           <List text="Pricing" des="footer"/>
                         </Link>
 
-                        <Link to="/blog">
+                        <Link to="/">
                           <List text="Blog" des="footer"/>
                         </Link>
                     

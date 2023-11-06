@@ -31,7 +31,7 @@ function Distribution() {
                 </div>
 
                 <div className=' px-4 2xl:px-0'>
-                    <CommonCard heading="No more messy distributionnpm" paragraph="Install any demo or template with a single click. You can mix and match all the demos & templates. Every demo can be turned into one or multi-page. You can also use the shop features for all demos." btnText="Get started" headingStyle=" text-3xl md:text-large leading-[50px]  md:w-[500px] md:leading-[65px]" paragraphStyle=" md:w-[450px] md:w-[575px] my-4"/>
+                    <CommonCard heading="No more messy distribution lists." paragraph="Install any demo or template with a single click. You can mix and match all the demos & templates. Every demo can be turned into one or multi-page. You can also use the shop features for all demos." btnText="Get started" headingStyle=" md:text-large text-[22px] leading-[50px] xl:text-large  md:w-[500px] md:leading-[65px]" paragraphStyle=" md:w-[450px] md:w-[575px] my-4"/>
                 </div>
               </div>
          </div>
